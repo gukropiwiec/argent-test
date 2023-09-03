@@ -28,8 +28,10 @@ if ($(".slider-certificate-vrtical").length > 0) {
     let swiper = new Swiper(".slider-certificate-vrtical", {
         slidesPerView: 1,
         direction: 'vertical',
-        autoplay: true,
-        speed: 2000,
+        autoplay: {
+            delay: 4000
+        },
+        speed: 1,
         loop: true,
     });
 }
